@@ -1,0 +1,43 @@
+{
+  "name": "MVP",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "react-dev": "webpack --config ./webpack.config.js --mode development -w",
+    "start": "nodemon back-end/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettMogen/hr-den16-mvp.git"
+  },
+  "author": "Brett Mogen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrettMogen/hr-den16-mvp/issues"
+  },
+  "homepage": "https://github.com/BrettMogen/hr-den16-mvp#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "live-server": "^1.2.1",
+    "mysql2": "^2.3.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-select": "^5.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.7.0",
+    "file-loader": "^6.2.0",
+    "nodemon": "^2.0.7",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
