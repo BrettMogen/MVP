@@ -75,7 +75,7 @@ const CustomPlanCreator = () => {
     name: 'Cardio',
     fileTag: <CardioOptions />,
     className: 'cardioOptions',
-    image: "/images/dumbbells.jpeg"
+    image: "/images/running.jpeg"
   },
   {
     name: 'Core',
