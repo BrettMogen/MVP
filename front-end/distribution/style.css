@@ -47,6 +47,7 @@ body {
   'weightlifting cardio'
   'core flexibility';
   margin-bottom: 20px;
+  grid-auto-columns: minmax(0, 1fr);
 }
 
 .weightliftingOptions {
@@ -73,7 +74,9 @@ body {
 }
 
 .options-grid-title {
-  height: 100px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 32px;
 }
 
 .overallVolumeSliderContainer {

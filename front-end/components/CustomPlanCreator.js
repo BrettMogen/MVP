@@ -132,7 +132,7 @@ const CustomPlanCreator = () => {
           {trainingOptionsDetails.map((option) => {
             let currentClassName = option.className + " options-grid-section";
             return (<div className={currentClassName}>
-            <div className="options-grid-title" style={{ backgroundImage: `url(${option.image})` }}>{option.name}</div>
+            <div className="options-grid-title" style={{ backgroundColor: "#99a2c7", backgroundImage: `url(${option.image})`, backgroundSize: "cover", backgroundBlendMode: "multiply", color: "white", paddingTop: "50px", paddingBottom: "50px" }}>{option.name}</div>
             {option.fileTag}
           </div>)
           })}
