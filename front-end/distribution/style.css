@@ -4,8 +4,9 @@ body {
 
 .submitPlanButton {
   width: 100%;
-  height: 30px;
   font-size: 22px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   background-color: #4C5DEF;
   color: white;
   border: 2px solid black;
