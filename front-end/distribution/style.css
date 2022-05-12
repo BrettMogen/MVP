@@ -45,14 +45,19 @@ body {
   display: grid;
   gap: 1em;
   grid-template-areas:
-  'weightlifting cardio'
-  'core flexibility';
+  'upperBody lowerBody'
+  'cardio core'
+  'stretching yoga';
   margin-bottom: 20px;
   grid-auto-columns: minmax(0, 1fr);
 }
 
-.weightliftingOptions {
-  grid-area: 'weightlifting';
+.upperBodyOptions {
+  grid-area: 'upperBody';
+}
+
+.lowerBodyOptions {
+  grid-area: 'lowerBody';
 }
 
 .cardioOptions {
@@ -64,7 +69,11 @@ body {
 }
 
 .flexibilityOptions {
-  grid-area: 'flexibility';
+  grid-area: 'stretching';
+}
+
+.flexibilityOptions {
+  grid-area: 'yoga';
 }
 
 .options-grid-section {

@@ -5,7 +5,11 @@ import App from './App.js';
 const CustomPlan = (plan) => {
   let info = plan.value;
 
-  let weightLiftingList = info.weightliftingSelections.map((value) => {
+  let upperBodyList = info.upperBodySelections.map((value) => {
+    return <div>{value.label}</div>;
+  });
+
+  let lowerBodyList = info.lowerBodySelections.map((value) => {
     return <div>{value.label}</div>;
   });
 
@@ -27,9 +31,13 @@ const CustomPlan = (plan) => {
     <div style={{ height: "300px", border: "2px solid black", marginTop: "20px", marginBottom: "20px" }}>
       <h3 style={{ width: "100%", marginTop: "10px", marginBottom: "25px", textAlign: "center", textDecoration: "underline" }}>{info.name + "'s Program: " + info.workoutName}</h3>
       <div className="plan-sections-grid">
-        <div className="weightlifting-grid-section">
-          <div style={{ textDecoration: "underline", textAlign: "center" }}>Weightlifting Exercises</div>
-          <div>{weightLiftingList}</div>
+        <div className="upper-body-grid-section">
+          <div style={{ textDecoration: "underline", textAlign: "center" }}>Upper Body Exercises</div>
+          <div>{upperBodyList}</div>
+        </div>
+        <div className="lower-body-grid-section">
+          <div style={{ textDecoration: "underline", textAlign: "center" }}>Lower Body Exercises</div>
+          <div>{lowerBodyList}</div>
         </div>
         <div className="cardio-grid-section">
           <div style={{ textDecoration: "underline", textAlign: "center" }}>Cardio Exercises</div>
