@@ -81,13 +81,13 @@ const CustomPlanCreator = () => {
     name: 'Core',
     fileTag: <CoreOptions />,
     className: 'coreOptions',
-    image: "/images/dumbbells.jpeg"
+    image: "/images/frontPlank.jpeg"
   },
   {
     name: 'Flexibility',
     fileTag: <FlexibilityOptions />,
     className: 'flexibilityOptions',
-    image: "/images/dumbbells.jpeg"
+    image: "/images/stretching.jpeg"
   }
   ]
 
