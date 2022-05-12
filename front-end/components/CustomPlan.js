@@ -21,7 +21,11 @@ const CustomPlan = (plan) => {
     return <div>{value.label}</div>;
   });
 
-  let flexibilityList = info.flexibilitySelections.map((value) => {
+  let stretchingList = info.stretchingSelections.map((value) => {
+    return <div>{value.label}</div>;
+  });
+
+  let yogaList = info.yogaSelections.map((value) => {
     return <div>{value.label}</div>;
   });
 

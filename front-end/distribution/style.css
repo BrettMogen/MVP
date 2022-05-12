@@ -22,23 +22,31 @@ body {
 .plan-sections-grid {
   display: grid;
   gap: 1em;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.weightlifting-grid-section {
+.upperBody-grid-section {
   grid-column: 1;
 }
 
-.cardio-grid-section {
+.lowerBody-grid-section {
   grid-column: 2;
 }
 
-.core-grid-section {
+.cardio-grid-section {
   grid-column: 3;
 }
 
-.flexibility-grid-section {
+.core-grid-section {
   grid-column: 4;
+}
+
+.stretching-grid-section {
+  grid-column: 5;
+}
+
+.yoga-grid-section {
+  grid-column: 6;
 }
 
 .optionsGrid {
@@ -68,11 +76,11 @@ body {
   grid-area: 'core';
 }
 
-.flexibilityOptions {
+.stretchingOptions {
   grid-area: 'stretching';
 }
 
-.flexibilityOptions {
+.yogaOptions {
   grid-area: 'yoga';
 }
 
