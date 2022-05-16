@@ -2,8 +2,8 @@ import React, { useState, useContext } from 'react';
 import { MainContext } from '../../context.js';
 import Select from 'react-select';
 
-const WeightliftingOptions = () => {
-  const { weightliftingSelections, setWeightliftingSelections } = useContext(MainContext);
+const LowerBody = () => {
+  const { lowerBodySelections, setLowerBodySelections } = useContext(MainContext);
 
 
 
@@ -30,20 +30,20 @@ const WeightliftingOptions = () => {
 
   return (
     <div>
-      <Select isMulti={true} placeholder={'Weightlifting Options...'} options={options} value={weightliftingSelections} onChange={(newValue, action) => {
+      <Select isMulti={true} placeholder={'Lower Body Options...'} options={options} value={lowerBodySelections} onChange={(newValue, action) => {
         if (action.action === 'select-option') {
-          setWeightliftingSelections(weightliftingSelections.concat([action.option]));
+          setLowerBodySelections(lowerBodySelections.concat([action.option]));
         } else if (action.action === 'remove-value') {
-          let selectionClone = Array.from(weightliftingSelections);
+          let selectionClone = Array.from(lowerBodySelections);
           let indexOfRemovedItem = selectionClone.indexOf(action.removedValue);
           selectionClone.splice(indexOfRemovedItem, 1);
-          setWeightliftingSelections(selectionClone);
+          setLowerBodySelections(selectionClone);
         } else if (action.action === 'clear') {
-          setWeightliftingSelections([]);
+          setLowerBodySelections([]);
         }
       }} />
     </div>
   )
 }
 
-export default WeightliftingOptions;
+export default LowerBody;

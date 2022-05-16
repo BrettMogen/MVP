@@ -1,10 +1,13 @@
 import React, { useState, useContext } from 'react';
 import { MainContext } from '../context.js';
 import App from './App.js';
-import WeightliftingOptions from './TrainingOptions/WeightliftingOptions.js';
+import LowerBody from './TrainingOptions/LowerBody.js';
+import UpperBody from './TrainingOptions/UpperBody.js';
 import CardioOptions from './TrainingOptions/CardioOptions.js';
 import CoreOptions from './TrainingOptions/CoreOptions.js';
-import FlexibilityOptions from './TrainingOptions/FlexibilityOptions.js';
+import Stretching from './TrainingOptions/Stretching.js';
+import Yoga from './TrainingOptions/Yoga.js';
+
 import Axios from 'axios';
 
 const CustomPlanCreator = () => {
@@ -66,9 +69,15 @@ const CustomPlanCreator = () => {
   }
 
   let trainingOptionsDetails = [{
-    name: 'Weightlifting',
-    fileTag: <WeightliftingOptions />,
-    className: 'weightliftingOptions',
+    name: 'Lower Body',
+    fileTag: <LowerBody />,
+    className: 'lowerBodyOptions',
+    image: "/images/dumbbells.jpeg"
+  },
+  {
+    name: 'Upper Body',
+    fileTag: <UpperBody />,
+    className: 'upperBodyOptions',
     image: "/images/dumbbells.jpeg"
   },
   {
@@ -84,9 +93,15 @@ const CustomPlanCreator = () => {
     image: "/images/frontPlank.jpeg"
   },
   {
-    name: 'Flexibility',
-    fileTag: <FlexibilityOptions />,
-    className: 'flexibilityOptions',
+    name: 'Stretching',
+    fileTag: <Stretching />,
+    className: 'stretchingOptions',
+    image: "/images/stretching.jpeg"
+  },
+  {
+    name: 'Yoga',
+    fileTag: <Yoga />,
+    className: 'yogaOptions',
     image: "/images/stretching.jpeg"
   }
   ]

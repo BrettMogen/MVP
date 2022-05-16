@@ -2,8 +2,8 @@ import React, { useState, useContext } from 'react';
 import { MainContext } from '../../context.js';
 import Select from 'react-select';
 
-const FlexibilityOptions = () => {
-  const { flexibilitySelections, setFlexibilitySelections } = useContext(MainContext);
+const StretchingOptions = () => {
+  const { stretchingSelections, setStretchingSelections } = useContext(MainContext);
 
   const options = [
     {value: 'seatedHamstringStretch', label: 'Seated Hamstring Stretch'},
@@ -22,20 +22,20 @@ const FlexibilityOptions = () => {
 
   return (
     <div>
-      <Select isMulti={true} placeholder={'Flexibility Options...'} options={options} value={flexibilitySelections} onChange={(newValue, action) => {
+      <Select isMulti={true} placeholder={'Stretching Options...'} options={options} value={stretchingSelections} onChange={(newValue, action) => {
         if (action.action === 'select-option') {
-          setFlexibilitySelections(flexibilitySelections.concat([action.option]));
+          setStretchingSelections(stretchingSelections.concat([action.option]));
         } else if (action.action === 'remove-value') {
-          let selectionClone = Array.from(flexibilitySelections);
+          let selectionClone = Array.from(stretchingSelections);
           let indexOfRemovedItem = selectionClone.indexOf(action.removedValue);
           selectionClone.splice(indexOfRemovedItem, 1);
-          setFlexibilitySelections(selectionClone);
+          setStretchingSelections(selectionClone);
         } else if (action.action === 'clear') {
-          setFlexibilitySelections([]);
+          setStretchingSelections([]);
         }
       }} />
     </div>
   )
 }
 
-export default FlexibilityOptions;
+export default StretchingOptions;

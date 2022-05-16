@@ -35,11 +35,11 @@ const CustomPlan = (plan) => {
     <div style={{ height: "300px", border: "2px solid black", marginTop: "20px", marginBottom: "20px" }}>
       <h3 style={{ width: "100%", marginTop: "10px", marginBottom: "25px", textAlign: "center", textDecoration: "underline" }}>{info.name + "'s Program: " + info.workoutName}</h3>
       <div className="plan-sections-grid">
-        <div className="upper-body-grid-section">
+        <div className="upperBody-grid-section">
           <div style={{ textDecoration: "underline", textAlign: "center" }}>Upper Body Exercises</div>
           <div>{upperBodyList}</div>
         </div>
-        <div className="lower-body-grid-section">
+        <div className="lowerBody-grid-section">
           <div style={{ textDecoration: "underline", textAlign: "center" }}>Lower Body Exercises</div>
           <div>{lowerBodyList}</div>
         </div>
@@ -51,9 +51,13 @@ const CustomPlan = (plan) => {
           <div style={{ textDecoration: "underline", textAlign: "center" }}>Core Exercises</div>
           <div>{coreList}</div>
         </div>
-        <div className="flexibility-grid-section">
+        <div className="stretching-grid-section">
           <div style={{ textDecoration: "underline", textAlign: "center" }}>Flexibility Exercises</div>
-          <div>{flexibilityList}</div>
+          <div>{stretchingList}</div>
+        </div>
+        <div className="yoga-grid-section">
+          <div style={{ textDecoration: "underline", textAlign: "center" }}>Flexibility Exercises</div>
+          <div>{yogaList}</div>
         </div>
       </div>
     </div>
@@ -61,17 +65,3 @@ const CustomPlan = (plan) => {
 }
 
 export default CustomPlan;
-
-
-      // <span className="weightliftingSectionOfCustomPlan" style={{display: "inline-block", position: "absolute", marginLeft: "15px"}}>
-      //   <div style={{textDecoration: "underline"}}>Weightlifting Exercises:</div>
-      //   <div>{weightLiftingList}</div>
-      // </span>
-      // <span className="cardioAndCoreSectionOfCustomPlan" style={{display: "inline-block", position: "absolute", marginLeft: "375px"}}>
-      //   <div style={{textDecoration: "underline"}}>Cardio and Core Exercises:</div>
-      //   <div>{cardioAndCoreList}</div>
-      // </span>
-      // <span className="flexibilitySectionOfCustomPlan" style={{display: "inline-block", position: "absolute", marginLeft: "750px"}}>
-      //   <div style={{textDecoration: "underline"}}>Flexibility Exercises:</div>
-      //   <div>{flexibilityList}</div>
-      //   </span>
