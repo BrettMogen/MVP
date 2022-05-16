@@ -73,40 +73,42 @@ const CustomPlanCreator = () => {
     fileTag: <UpperBody />,
     className: 'upperBodyOptions',
     image: "/images/overheadPress.jpeg",
-    description: "Upper body weightlifting movements help improve muscular strength in the chest, shoulders, and back. Try adding in some upper body pushing exercises (bench press, tricep extensions, etc.) and some upper body pulling exercises (pull-ups, bicep curls, etc.) to your program for a well-rounded upper body."
+    description: "Upper body weightlifting movements help improve muscular strength in the chest, shoulders, and back. Try adding in some upper body pushing exercises (bench press, tricep extensions, etc.) and some upper body pulling exercises (pull-ups, bicep curls, etc.) to your program for a well-rounded upper body!"
   },
   {
     name: 'Core',
     fileTag: <CoreOptions />,
     className: 'coreOptions',
     image: "/images/frontPlank.jpeg",
-    description: "Core exercises are helpful for preventing injury and increasing stability while exercising. Try including some core exercises like front planks or sit-ups to start building a solid core."
+    description: "Core exercises are helpful for preventing injury and increasing stability while exercising. Try including some core exercises like front planks or sit-ups to start building a solid core!"
   },
   {
     name: 'Stretching',
     fileTag: <Stretching />,
     className: 'stretchingOptions',
     image: "/images/stretching.jpeg",
-    description: "Stretching before working out helps get your muscles primed for physical activity, and stretching after exercising is great for cooling down and starting the recovery process. Try including a large variety of stretches and spending more time stretching out areas that need extra attention."
+    description: "Stretching before working out helps get your muscles primed for physical activity, and stretching after exercising is great for cooling down and starting the recovery process. Try including a large variety of stretches and spending more time stretching out areas that need extra attention!"
   },
   {
     name: 'Lower Body',
     fileTag: <LowerBody />,
     className: 'lowerBodyOptions',
     image: "/images/backSquat.jpeg",
-    description: "Lower body weightlifting movements help improve muscular strength in the quadriceps, hamstrings, glutes, etc. Try adding in some lower body pushing exercises (backsquat, leg press, etc.) and some lower body pulling exercises (romanian deadlifts, leg curls, etc.) to your program for a well-rounded lower body."
+    description: "Lower body weightlifting movements help improve muscular strength in the quadriceps, hamstrings, glutes, etc. Try adding in some lower body pushing exercises (backsquat, leg press, etc.) and some lower body pulling exercises (romanian deadlifts, leg curls, etc.) to your program for a well-rounded lower body!"
   },
   {
     name: 'Cardio',
     fileTag: <CardioOptions />,
     className: 'cardioOptions',
-    image: "/images/running.jpeg"
+    image: "/images/running.jpeg",
+    description: "Cardio vastly improves cardiac, pulmonary, and vascular health, and is important for long-term health. Whether you like to run fast or slow, try including some cardio in your exercise program!"
   },
   {
     name: 'Yoga',
     fileTag: <Yoga />,
     className: 'yogaOptions',
-    image: "/images/yoga.jpeg"
+    image: "/images/yoga.jpeg",
+    description: "Yoga can be used to improve strength (choose poses that recruit large muscle groups), cardiovascular fitness (focus on breathing and perform strenuous poses), or flexibility (choose poses that focus on stretching). Try adding a style of yoga to your program that aligns with your goals!"
   }
   ]
 
