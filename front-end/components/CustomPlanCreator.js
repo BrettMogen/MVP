@@ -72,25 +72,29 @@ const CustomPlanCreator = () => {
     name: 'Upper Body',
     fileTag: <UpperBody />,
     className: 'upperBodyOptions',
-    image: "/images/overheadPress.jpeg"
+    image: "/images/overheadPress.jpeg",
+    description: "Upper body weightlifting movements help improve muscular strength in the chest, shoulders, and back. Try adding in some upper body pushing exercises (bench press, tricep extensions, etc.) and some upper body pulling exercises (pull-ups, bicep curls, etc.) to your program for a well-rounded upper body."
   },
   {
     name: 'Core',
     fileTag: <CoreOptions />,
     className: 'coreOptions',
-    image: "/images/frontPlank.jpeg"
+    image: "/images/frontPlank.jpeg",
+    description: "Core exercises are helpful for preventing injury and increasing stability while exercising. Try including some core exercises like front planks or sit-ups to start building a solid core."
   },
   {
     name: 'Stretching',
     fileTag: <Stretching />,
     className: 'stretchingOptions',
-    image: "/images/stretching.jpeg"
+    image: "/images/stretching.jpeg",
+    description: "Stretching before working out helps get your muscles primed for physical activity, and stretching after exercising is great for cooling down and starting the recovery process. Try including a large variety of stretches and spending more time stretching out areas that need extra attention."
   },
   {
     name: 'Lower Body',
     fileTag: <LowerBody />,
     className: 'lowerBodyOptions',
-    image: "/images/backSquat.jpeg"
+    image: "/images/backSquat.jpeg",
+    description: "Lower body weightlifting movements help improve muscular strength in the quadriceps, hamstrings, glutes, etc. Try adding in some lower body pushing exercises (backsquat, leg press, etc.) and some lower body pulling exercises (romanian deadlifts, leg curls, etc.) to your program for a well-rounded lower body."
   },
   {
     name: 'Cardio',
@@ -148,7 +152,8 @@ const CustomPlanCreator = () => {
             let currentClassName = option.className + " options-grid-section";
             return (<div className={currentClassName}>
               <div className="options-grid-title" style={{ backgroundColor: "#99a2c7", backgroundImage: `url(${option.image})`, backgroundSize: "cover", backgroundBlendMode: "multiply", color: "white", paddingTop: "50px", paddingBottom: "50px" }}>{option.name}</div>
-              {option.fileTag}
+              <div className="options-dropdown-menu" style={{ margin: "10px 0px" }}>{option.fileTag}</div>
+              <div className="options-description">{option.description || ''}</div>  
             </div>)
           })}
         </div>
