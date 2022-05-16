@@ -53,9 +53,8 @@ body {
   display: grid;
   gap: 1em;
   grid-template-areas:
-  'upperBody lowerBody'
-  'cardio core'
-  'stretching yoga';
+  'upperBody core stretching'
+  'lowerBody cardio yoga';
   margin-bottom: 20px;
   grid-auto-columns: minmax(0, 1fr);
 }

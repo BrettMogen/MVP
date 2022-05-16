@@ -69,22 +69,10 @@ const CustomPlanCreator = () => {
   }
 
   let trainingOptionsDetails = [{
-    name: 'Lower Body',
-    fileTag: <LowerBody />,
-    className: 'lowerBodyOptions',
-    image: "/images/dumbbells.jpeg"
-  },
-  {
     name: 'Upper Body',
     fileTag: <UpperBody />,
     className: 'upperBodyOptions',
-    image: "/images/dumbbells.jpeg"
-  },
-  {
-    name: 'Cardio',
-    fileTag: <CardioOptions />,
-    className: 'cardioOptions',
-    image: "/images/running.jpeg"
+    image: "/images/overheadPress.jpeg"
   },
   {
     name: 'Core',
@@ -99,10 +87,22 @@ const CustomPlanCreator = () => {
     image: "/images/stretching.jpeg"
   },
   {
+    name: 'Lower Body',
+    fileTag: <LowerBody />,
+    className: 'lowerBodyOptions',
+    image: "/images/backSquat.jpeg"
+  },
+  {
+    name: 'Cardio',
+    fileTag: <CardioOptions />,
+    className: 'cardioOptions',
+    image: "/images/running.jpeg"
+  },
+  {
     name: 'Yoga',
     fileTag: <Yoga />,
     className: 'yogaOptions',
-    image: "/images/stretching.jpeg"
+    image: "/images/yoga.jpeg"
   }
   ]
 
@@ -147,9 +147,9 @@ const CustomPlanCreator = () => {
           {trainingOptionsDetails.map((option) => {
             let currentClassName = option.className + " options-grid-section";
             return (<div className={currentClassName}>
-            <div className="options-grid-title" style={{ backgroundColor: "#99a2c7", backgroundImage: `url(${option.image})`, backgroundSize: "cover", backgroundBlendMode: "multiply", color: "white", paddingTop: "50px", paddingBottom: "50px" }}>{option.name}</div>
-            {option.fileTag}
-          </div>)
+              <div className="options-grid-title" style={{ backgroundColor: "#99a2c7", backgroundImage: `url(${option.image})`, backgroundSize: "cover", backgroundBlendMode: "multiply", color: "white", paddingTop: "50px", paddingBottom: "50px" }}>{option.name}</div>
+              {option.fileTag}
+            </div>)
           })}
         </div>
         <button className="submitPlanButton" onClick={submitPlan}>Submit Plan</button>
