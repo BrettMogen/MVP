@@ -101,7 +101,7 @@ const CustomPlanCreator = () => {
     fileTag: <CardioOptions />,
     className: 'cardioOptions',
     image: "/images/running.jpeg",
-    description: "Cardio vastly improves cardiac, pulmonary, and vascular health, and is important for long-term health. Whether you like to run fast or slow, try including some cardio in your exercise program!"
+    description: "Cardio vastly improves cardiac, pulmonary, and vascular health, and is important for long-term health. Whether you like to sprint or pace yourself, try including some cardio in your exercise program!"
   },
   {
     name: 'Yoga',
