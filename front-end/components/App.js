@@ -11,7 +11,7 @@ const App = () => {
   return (
     <MainContext.Provider value={{ createdWorkoutPlan, setCreatedWorkoutPlan }}>
       <div>
-        <div style={{ width: "100%", height: "80px", backgroundColor: "#4C5DEF", margin: "auto", textAlign: "center" }}><h1 style={{ color: "white", fontSize: "60px" }}>Brett's Fitness Emporium</h1></div>
+        <div style={{ width: "100%", backgroundColor: "#4C5DEF", margin: "auto", textAlign: "center" }}><h1 style={{ color: "white", fontSize: "60px", paddingTop: "10px", paddingBottom: "10px" }}>Brett's Fitness Emporium</h1></div>
         <div style={{ width: "90%", margin: "auto" }}>
           {createdWorkoutPlan === '' ? '' : <CustomPlan value={createdWorkoutPlan}/>}
           <h3>Create Your Custom Workout Plan!</h3>
