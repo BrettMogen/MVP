@@ -8,24 +8,23 @@ const LowerBody = () => {
 
 
   const options = [
-    { value: 'deadlift', label: 'Deadlift' },
-    { value: 'bBBenchPress', label: 'Barbell Bench Press' },
     { value: 'backSquat', label: 'Back Squat' },
     { value: 'frontSquat', label: 'Front Squat' },
-    { value: 'bGS', label: 'Bulgarian Split Squat' },
-    { value: 'bicepCurls', label: 'Bicep Curls' },
-    { value: 'bBShoulderPress', label: 'Barbell Shoulder Press' },
-    { value: 'latPulldown', label: 'Lat Pulldown' },
-    { value: 'uprightBBRow', label: 'Upright Barbell Row' },
-    { value: 'reverseLunge', label: 'Reverse Lunge' },
-    { value: 'dBBenchPress', label: 'Dumbbell Bench Press' },
-    { value: 'bBPushPress', label: 'Barbell Push Press' },
-    { value: 'powerClean', label: 'Power Clean' },
+    { value: 'gobletSquat', label: 'Goblet Squat' },
+    { value: 'pistolSquat', label: 'Pistol Squat' },
+    { value: 'deadlift', label: 'Deadlift' },
     { value: 'cAJerk', label: 'Clean and Jerk' },
-    { value: 'dBSideLunge', label: 'Dumbbell Side Lunge' },
-    { value: 'lateralDBRaise', label: 'Lateral Dumbbell Raise' },
-    { value: 'dBOverheadTricepExtensions', label: 'Dumbbell Overhead Tricep Extensions' },
-    { value: 'horizontalCableRow', label: 'Horizontal Cable Row' }
+    { value: 'powerClean', label: 'Power Clean' },
+    { value: 'bBLunge', label: 'Barbell Lunge' },
+    { value: 'bBReverseLunge', label: 'Barbell Reverse Lunge' },
+    { value: 'dBLunge', label: 'Dumbbell Lunge' },
+    { value: 'dBSideLunge', label: 'Goblet Side Lunge' },
+    { value: 'bulgarianSS', label: 'Bulgarian Split Squat' },
+    { value: 'dBBoxStepUp', label: 'Dumbbell Box Step-Up' },
+    { value: 'bBHipThrust', label: 'Barbell Hip Thrust' },
+    { value: 'hipSled', label: 'Hip Sled' },
+    { value: 'hamstringCurl', label: 'Hamstring Curl' },
+    { value: 'calfRaise', label: 'Calf Raise' }
   ]
 
   return (
