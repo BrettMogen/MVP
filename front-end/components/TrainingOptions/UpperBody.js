@@ -5,27 +5,30 @@ import Select from 'react-select';
 const UpperBody = () => {
   const { upperBodySelections, setUpperBodySelections } = useContext(MainContext);
 
-
-
+  //List of possible upper body movements included in selection dropdown menu
   const options = [
-    { value: 'deadlift', label: 'Deadlift' },
-    { value: 'bBBenchPress', label: 'Barbell Bench Press' },
-    { value: 'backSquat', label: 'Back Squat' },
-    { value: 'frontSquat', label: 'Front Squat' },
-    { value: 'bGS', label: 'Bulgarian Split Squat' },
-    { value: 'bicepCurls', label: 'Bicep Curls' },
-    { value: 'bBShoulderPress', label: 'Barbell Shoulder Press' },
-    { value: 'latPulldown', label: 'Lat Pulldown' },
-    { value: 'uprightBBRow', label: 'Upright Barbell Row' },
-    { value: 'reverseLunge', label: 'Reverse Lunge' },
+    //Pushing movements
+    { value: 'benchPress', label: 'Bench Press' },
+    { value: 'inclineBenchPress', label: 'Incline Bench Press' },
     { value: 'dBBenchPress', label: 'Dumbbell Bench Press' },
-    { value: 'bBPushPress', label: 'Barbell Push Press' },
-    { value: 'powerClean', label: 'Power Clean' },
-    { value: 'cAJerk', label: 'Clean and Jerk' },
-    { value: 'dBSideLunge', label: 'Dumbbell Side Lunge' },
-    { value: 'lateralDBRaise', label: 'Lateral Dumbbell Raise' },
-    { value: 'dBOverheadTricepExtensions', label: 'Dumbbell Overhead Tricep Extensions' },
-    { value: 'horizontalCableRow', label: 'Horizontal Cable Row' }
+    { value: 'inclineDBBenchPress', label: 'Incline Dumbbell Bench Press' },
+    { value: 'bBShoulderPress', label: 'Barbell Shoulder Press' },
+    { value: 'dBShoulderPress', label: 'Dumbbell Shoulder Press' },
+    { value: 'dBOverheadTricepExtension', label: 'Dumbbell Overhead Tricep Extension' },
+    { value: 'skullCrusher', label: 'Skull Crusher' },
+    { value: 'tricepDip', label: 'Tricep Dip' },
+    //Pulling movements
+    { value: 'uprightBBRow', label: 'Upright Barbell Row' },
+    { value: 'iADBRow', label: 'Inline-Assisted Dumbbell Row' },
+    { value: 'horizontalCableRow', label: 'Horizontal Cable Row' },
+    { value: 'latPulldown', label: 'Lat Pulldown' },
+    { value: 'pullUp', label: 'Pull-Up' },
+    { value: 'dBShrug', label: 'Dumbbell Shrug' },
+    { value: 'bicepCurl', label: 'Bicep Curl' },
+    //Deltoid-specific movements
+    { value: 'dBFrontRaise', label: 'Dumbbell Front Raise' },
+    { value: 'dBLateralRaise', label: 'Dumbbell Lateral Raise' },
+    { value: 'waiterWalk', label: 'Waiter Walk' }
   ]
 
   return (
