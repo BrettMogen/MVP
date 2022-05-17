@@ -15,10 +15,12 @@ const CustomPlanCreator = () => {
 
   const [name, setName] = useState('');
   const [workoutName, setWorkoutName] = useState('');
-  const [weightliftingSelections, setWeightliftingSelections] = useState([]);
+  const [upperBodySelections, setUpperBodySelections] = useState([]);
+  const [lowerBodySelections, setLowerBodySelections] = useState([]);
   const [cardioSelections, setCardioSelections] = useState([]);
   const [coreSelections, setCoreSelections] = useState([]);
-  const [flexibilitySelections, setFlexibilitySelections] = useState([]);
+  const [stretchingSelections, setStretchingSelections] = useState([]);
+  const [yogaSelections, setYogaSelections] = useState([]);
   const [overallVolumeSlider, setOverallVolumeSlider] = useState('5');
 
   let submitPlan = function () {
@@ -29,7 +31,7 @@ const CustomPlanCreator = () => {
     } else if (workoutName === '') {
       alert('Please enter a Workout Plan Name!');
       validSubmit = false;
-    } else if (weightliftingSelections.length === 0 && cardioSelections.length === 0 && coreSelections.length === 0 && flexibilitySelections.length === 0) {
+    } else if (upperBodySelections.length === 0 && lowerBodySelections.length === 0 && cardioSelections.length === 0 && coreSelections.length === 0 && stretchingSelections.length === 0 && yogaSelections.length === 0) {
       alert('Please pick some exercises to add to your program!');
       validSubmit = false;
     }
@@ -38,10 +40,12 @@ const CustomPlanCreator = () => {
       let newWorkoutPlan = {
         name: name,
         workoutName: workoutName,
-        weightliftingSelections: weightliftingSelections,
+        upperBodySelections: upperBodySelections,
+        lowerBodySelections: lowerBodySelections,
         cardioSelections: cardioSelections,
         coreSelections: coreSelections,
-        flexibilitySelections: flexibilitySelections
+        stretchingSelections: stretchingSelections,
+        yogaSelections: yogaSelections
       };
 
       setCreatedWorkoutPlan(newWorkoutPlan);
@@ -50,10 +54,12 @@ const CustomPlanCreator = () => {
 
       setName('');
       setWorkoutName('');
-      setWeightliftingSelections([]);
+      setupperBodySelections([]);
+      setLowerBodySelections([]);
       setCardioSelections([]);
       setCoreSelections([]);
-      setFlexibilitySelections([]);
+      setStretchingSelections([]);
+      setYogaSelections([]);
     }
   }
 
@@ -114,10 +120,12 @@ const CustomPlanCreator = () => {
 
   return (
     <MainContext.Provider value={{
-      weightliftingSelections, setWeightliftingSelections,
+      upperBodySelections, setUpperBodySelections,
+      lowerBodySelections, setLowerBodySelections,
       cardioSelections, setCardioSelections,
       coreSelections, setCoreSelections,
-      flexibilitySelections, setFlexibilitySelections
+      stretchingSelections, setStretchingSelections,
+      yogaSelections, setYogaSelections,
     }}>
       <div className="customPlanCreatorContainer">
         <div className="namesAndVolumeContainer">
