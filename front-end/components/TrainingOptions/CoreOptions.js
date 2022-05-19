@@ -6,19 +6,12 @@ const CoreOptions = () => {
   const { coreSelections, setCoreSelections } = useContext(MainContext);
 
   const options = [
-    { value: 'jogging', label: 'Jogging'},
-    { value: 'sprints', label: 'Sprints'},
     { value: 'frontPlank', label: 'Front Plank'},
     { value: 'mountainClimbers', label: 'Mountain Climbers'},
     { value: 'sidePlank', label: 'Side Plank'},
     { value: 'jumpingJacks', label: 'Jumping Jacks'},
-    { value: 'weightedSledPull', label: 'Weighted Sled Pull'},
-    { value: 'weightedSledPush', label: 'Weighted Sled Push'},
-    { value: 'swimming', label: 'Swimming'},
-    { value: 'cycling', label: 'Cycling'},
-    { value: 'stairStepper', label: 'Stair Stepper'},
-    { value: 'walking', label: 'Walking'},
-    { value: 'sitUps', label: 'Sit-Ups'}
+    { value: 'sitUps', label: 'Sit-Ups'},
+    { value: 'medicineBallToss', label: 'Medicine Ball Toss' }
   ]
 
   return (
