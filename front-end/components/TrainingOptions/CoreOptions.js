@@ -9,9 +9,13 @@ const CoreOptions = () => {
     { value: 'frontPlank', label: 'Front Plank'},
     { value: 'mountainClimbers', label: 'Mountain Climbers'},
     { value: 'sidePlank', label: 'Side Plank'},
-    { value: 'jumpingJacks', label: 'Jumping Jacks'},
     { value: 'sitUps', label: 'Sit-Ups'},
-    { value: 'medicineBallToss', label: 'Medicine Ball Toss' }
+    { value: 'medicineBallToss', label: 'Medicine Ball Toss' },
+    { value: 'medicineBallSlam', label: 'Medicine Ball Slam' },
+    { value: 'crunches', label: 'Crunches' },
+    { value: 'hangingLegRaises', label: 'Hanging Leg Raises' },
+    { value: 'bBRollouts', label: 'Barbell Rollouts' },
+    { value: 'superman', label: 'Superman' }
   ]
 
   return (
