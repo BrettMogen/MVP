@@ -131,13 +131,13 @@ const CustomPlanCreator = () => {
         <div className="namesAndVolumeContainer">
           <span className="nameField" style={{ marginRight: "5%" }}>
             <label>Name:</label>
-            <input type="text" id="name" value={name} onChange={(event) => {
+            <input style={{ marginLeft: "10px" }} type="text" id="name" value={name} onChange={(event) => {
               setName(event.target.value);
             }}></input>
           </span>
           <span className="workoutNameField" style={{ marginRight: "5%" }}>
             <label>Workout Plan Name:</label>
-            <input type="text" id="name" value={workoutName} onChange={(event) => {
+            <input style={{ marginLeft: "10px" }} type="text" id="name" value={workoutName} onChange={(event) => {
               setWorkoutName(event.target.value);
             }}></input>
           </span>
